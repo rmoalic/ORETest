@@ -22,7 +22,11 @@ obj: $(OBJPATHS)
 $(BUILD): fastore/build/ore.o
 	mkdir -p $(BUILD)
 
-fastore/build/ore.o:
+fastore:
+	git submodule update
+	mkdir -p fastore/build
+
+fastore/build/%.o: fastore
 	cd fastore && make
 
 $(TESTS):

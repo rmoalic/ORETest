@@ -1,0 +1,3 @@
+[submodule "fastore"]
+	path = fastore
+	url = https://github.com/kevinlewi/fastore
