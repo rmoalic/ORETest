@@ -1,0 +1,29 @@
+[rmoalic@Lancre middlesql]$ ./tests/middle 
+Commands:
+	ADD <name> <salary>	Add a new employee to the database
+	LIST	list all employees (by id)
+	SLIST	list all employees (by salary)
+	RESET	delete and recreate database
+	HELP	print this help message
+	QUIT	exit the programm
+prototype$ ADD Toto 1000
+Adding Toto with 1000
+prototype$ ADD Olivier 1500
+Adding Olivier with 1500
+prototype$ ADD Franck 1150
+Adding Franck with 1150
+prototype$ ADD MARC 750
+Adding MARC with 750
+prototype$ LIST
+1	Toto	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A5 A0 99 32 04 21 B8 72 80 6E 70 19 84 5A 8F 50 BF 05 F6 D8 B5 4F 40 39 32 0E 
+2	Olivier	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A4 92 99 00 00 00 00 00 40 66 A9 00 00 00 00 00 08 66 A9 00 00 00 00 00 49 66 
+3	Franck	91 3F 23 1D 37 B2 68 94 00 6E 6E 65 73 00 70 00 00 00 00 00 00 00 00 58 66 A9 00 00 00 00 00 6D 65 00 08 00 1E 00 00 78 
+4	MARC	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A5 A0 99 32 04 21 B8 72 80 6E 70 19 84 5A 8F 51 20 57 CF 53 06 2E 07 75 3F 66 
+prototype$ SLIST
+4	MARC	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A5 A0 99 32 04 21 B8 72 80 6E 70 19 84 5A 8F 51 20 57 CF 53 06 2E 07 75 3F 66 
+1	Toto	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A5 A0 99 32 04 21 B8 72 80 6E 70 19 84 5A 8F 50 BF 05 F6 D8 B5 4F 40 39 32 0E 
+2	Olivier	91 3F 23 1D 38 82 5B 74 DE 72 6D D1 F7 BD A4 92 99 00 00 00 00 00 00 00 00 00 00 00 00 00 78 66 A9 00 00 00 00 00 80 66 
+3	Franck	91 3F 23 1D 37 B2 68 94 00 A9 00 00 00 00 00 F7 66 A9 00 00 00 00 00 04 67 A9 00 00 00 00 00 05 67 A9 00 00 00 00 00 64 
+prototype$ RESET
+prototype$ QUIT
+
